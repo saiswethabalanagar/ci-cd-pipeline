@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>Create a Mission</title>
@@ -37,8 +37,8 @@
 </head>
 <body>
     <h1>Create a Mission</h1>
-    <form action="/createMission" method="post" th:object="${mission}">        
-        <p>Mission title: <input type="text" th:field="*{title}" required></p>        
+    <form action="/createMission" method="post" th:object="${mission}">
+        <p>Mission title: <input type="text" th:field="*{title}" required></p>
         <p>
             <select th:field="*{agent}">
                 <option value="Johnny English">Johnny English</option>
@@ -46,10 +46,10 @@
                 <option value="Austin Powers">Austin Powers</option>
             </select>
         </p>
-        
+
         <h2>Enter the gadgets</h2>
         Gadget 1: <input type="text" th:field="*{gadget1}"><br><br>
-        Gadget 2: <input type="text" th:field="*{gadget2}"><br><br>        
+        Gadget 2: <input type="text" th:field="*{gadget2}"><br><br>
         <input type="submit" value="Create Mission!">
     </form>
     <p><a href="/" style="color: #61dafb;">Back to home</a></p>
